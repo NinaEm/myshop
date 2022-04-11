@@ -29,8 +29,8 @@
                     </button>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
-                        <img src="./images/icons/person-ico.svg" alt="person-ico">
+                    <a href="registration.html" class="header__link"><img src="./images/icons/person-ico.svg"
+                            alt="person-ico">
                     </a>
                 </li>
                 <li class="header__item">
@@ -114,30 +114,36 @@
                         <span class="brand__subtittle-pink">fashion</span></span></h1>
             </div>
         </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="visually-hidden">sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item--woman">
-                        <p>30% off</p>
-                        <h3 class="sales__item--woman-pink">for women</h3>
-                    </li>
-                    <li class="sales__item sales__item--men">
-                        <p>hot deal</p>
-                        <h3 class="sales__item--men-pink">for men</h3>
-                    </li>
-                    <li class="sales__item sales__item--kids">
-                        <p>new arrivals</p>
-                        <h3 class="sales__item--kids-pink">for kids</h3>
-                    </li>
-                    <li class="sales__item sales__item--accesories">
-                        <p>luxirous & trendy</p>
-                        <h3 class="sales__item--accesories-pink">accesories</h3>
-                    </li>
-                </ul>
-            </div>
+        <section class="sales container">
+            <h2 class="visually-hidden">sales</h2>
+            <ul class="sales__list">
+                <li class="sales__item sales__item--woman">
+                    <div>
+                        <p class="sales__list-text">30% off</p>
+                        <h3 class="sales__list-heading">for women</h3>
+                    </div>
+                </li>
+                <li class="sales__item sales__item--men">
+                    <div>
+                        <p class="sales__list-text">hot deal</p>
+                        <h3 class="sales__list-heading">for men</h3>
+                    </div>
+                </li>
+                <li class="sales__item sales__item--kids">
+                    <div></div>
+                    <p class="sales__list-text">new arrivals</p>
+                    <h3 class="sales__list-heading">for kids</h3>
+                    </div>
+                </li>
+                <li class="sales__item sales__item--accesories">
+                    <div>
+                        <p class="sales__list-text">luxirous & trendy</p>
+                        <h3 class="sales__list-heading">accesories</h3>
+                    </div>
+                </li>
+            </ul>
         </section>
-        <section class="products">
+        <section class="products container">
             <h2 class="products__title">Fetured Items</h2>
             <p class="products__text">Shop for items based on what we featured in this week</p>
             <ul class="products__list">
@@ -196,37 +202,74 @@
                     <p class="products__price">$52.00</p>
                 </li>
             </ul>
-            <a href="#">Browse All Product</a>
+            <a href="#" class="products__button">Browse All Product</a>
         </section>
         <section class="benefits">
-            <h2 class="visually-hidden"></h2>
-            <ul class="benefits__list">
-                <li class="benefits__item"><a href="#">
-                        <img src="./images/icons/Delivery-ico.svg" alt="delivery-ico">
-                    </a>
-                    <h2>Free Delivery</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item"><a href="#">
-                        <img src="./images/icons/Sales-ico.svg" alt="sales-ico">
-                    </a>
-                    <h2>Sales & discounts</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item"><a href="#">
-                        <img src="./images/icons/Quality-ico.svg" alt="quality-ico">
-                    </a>
-                    <h2>Quality assurance</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">benefits</h2>
+                <ul class="benefits__list">
+                    <li class="benefits__item"><a href="#">
+                            <img src="./images/icons/Delivery-ico.svg" alt="delivery-ico">
+                        </a>
+                        <h3 class="benefits__item-heading">Free Delivery</h3>
+                        <p class="benefits__item-text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive
+                            models.</p>
+                    </li>
+                    <li class="benefits__item"><a href="#">
+                            <img src="./images/icons/Sales-ico.svg" alt="sales-ico">
+                        </a>
+                        <h3 class="benefits__item-heading">Sales & discounts</h3>
+                        <p class="benefits__item-text"> Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive
+                            models.</p>
+                    </li>
+                    <li class="benefits__item"><a href="#">
+                            <img src="./images/icons/Quality-ico.svg" alt="quality-ico">
+                        </a>
+                        <h3 class="benefits__item-heading">Quality assurance</h3>
+                        <p class="benefits__item-text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive
+                            models.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__review">
+                        <img class="footer__review-img" src="./images/client.png" alt="client">
+                        <p class="footer__review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar
+                            purus condimentum“</p>
+                    </div>
+                    <div class="footer__form">
+                        <p class="footer__form-text"> <span class="footer__subtitle">subscribe</span>
+                            for our newletter and promotion</p>
+                        <form class="footer__email" action="#" method="post">
+                            <input type="email" class="footer__email-input" placeholder="Enter your Email">
+                            <button class="footer__email-button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="info__blocks">
+                    <p class="info__text">© 2021 Brand All Rights Reserved.</p>
+                    <div class="info__media">
+                        <img src="./images/icons/facebook-ico.svg" alt="facebook-ico">
+                        <img src="./images/icons/instagram-ico.svg" alt="instagram-ico">
+                        <img src="./images/icons/pinterset-ico.svg" alt="pinterset-ico">
+                        <img src="./images/icons/twitter-ico.svg" alt="twitter-ico">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
