@@ -1,0 +1,61 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__controls {
+    display: flex;
+    align-items: center;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 34px 0 0;
+    outline: none;
+}
+
+.header__logo {
+    margin: 0 40px 0 0;
+}
+
+.header__cart {
+    position: relative;
+}
+
+.header__cart::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/round.svg);
+    background-size: 19px 19px;
+    width: 19px;
+    height: 19px;
+    right: -11px;
+    top: -5px;
+    z-index: 0;
+}
+
+.header__cart::before {
+    content: '5';
+    position: absolute;
+    font-size: 12px;
+    line-height: 14px;
+    color: $white;
+    right: -5px;
+    top: -4px;
+    z-index: 1;
+}
+
+.header__person-link {
+    margin: 0 34px 0 0;
+}
+
+.header__nav {
+    display: none;
+}

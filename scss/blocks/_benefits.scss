@@ -1,0 +1,32 @@
+.benefits {
+    background-color: $black;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 341px;
+}
+
+.benefits__item {
+    align-items: center;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits__item-heading {
+    color: $white;
+    margin: 25px 0 16px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.benefits__item-text {
+    color: $light-grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+}
