@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    color: var(--black);
+    color: $black;
 }
 
 .visually-hidden {
@@ -22,8 +22,4 @@ body {
 .container {
     width: 71%;
     margin: 0 auto;
-}
-
-.flex {
-    display: flex;
 }
