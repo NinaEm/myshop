@@ -1,53 +1,50 @@
 .sales {
     margin-bottom: 97px;
-}
 
-.sales__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    .sales__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-.sales__item {
-    color: var(--white);
-    width: 360px;
-    min-height: 260px;
-    background-color: $sales-bkg-color;
-    margin: 0 0 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .sales__item {
+        color: $white;
+        width: 360px;
+        min-height: 260px;
+        background-color: $sales-bkg-color;
+        margin: 0 0 30px;
+    }
 
-.sales__item--woman {
-    background-image: url(../images/sales-women-bkg.jpg);
-}
+    .sales__item--woman {
+        background-image: url(../images/sales-women-bkg.jpg);
+    }
 
-.sales__item--men {
-    background-image: url(../images/sales-man-bkg.jpg);
-}
+    .sales__item--men {
+        background-image: url(../images/sales-man-bkg.jpg);
+    }
 
-.sales__item--kids {
-    background-image: url(../images/sales-kids-bkg.jpg);
-}
+    .sales__item--kids {
+        background-image: url(../images/sales-kids-bkg.jpg);
+    }
 
-.sales__item--accesories {
-    background-image: url(../images/sales-shoes-bkg.jpg);
-    width: 100%;
-    margin: 0;
-    min-height: 180px;
-}
+    .sales__item--accesories {
+        background-image: url(../images/sales-shoes-bkg.jpg);
+        width: 100%;
+        margin: 0;
+        min-height: 180px;
+    }
 
-.sales__list-text {
-    text-align: center;
-    text-transform: uppercase;
-}
+    .sales__list-text {
+        text-align: center;
+        text-transform: uppercase;
+    }
 
-.sales__list-heading {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    text-align: center;
-    color: $dark-pink;
-    text-transform: uppercase;
+    .sales__list-heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
 }

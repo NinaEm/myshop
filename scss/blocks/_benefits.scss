@@ -7,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
     min-height: 341px;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -14,6 +18,10 @@
     width: 360px;
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        margin: 0 0 49px;
+    }
 }
 
 .benefits__item-heading {
@@ -23,8 +31,14 @@
     line-height: 24px;
 }
 
-.benefits__item-text {
-    color: $light-grey;
+&-last {
+    @include tablet {
+        margin: 0;
+    }
+}
+
+&-text {
+    color: $white;
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
