@@ -3,6 +3,14 @@
     background-size: cover;
     background-position: center;
 
+    @include mobile {
+        background-position: left;
+    }
+
+    @include tablet {
+        background-position: left;
+    }
+
     .footer__content {
         display: flex;
         justify-content: space-around;

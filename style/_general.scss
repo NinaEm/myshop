@@ -23,3 +23,21 @@ body {
     width: 71%;
     margin: 0 auto;
 }
+
+.active:hover,
+.active:focus {
+    opacity: 0.6;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 91%;
+    }
+}

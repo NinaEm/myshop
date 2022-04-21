@@ -1,10 +1,18 @@
 .sales {
     margin-bottom: 97px;
 
+    @include mobile {
+        margin-bottom: 64px;
+    }
+
     .sales__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     .sales__item {
@@ -13,11 +21,16 @@
         min-height: 260px;
         background-color: $sales-bkg-color;
         margin: 0 0 30px;
+
         @include flex-center();
 
         @include tablet {
             width: 32%;
             min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
         }
 
         &--woman {
