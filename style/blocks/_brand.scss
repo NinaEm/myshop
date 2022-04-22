@@ -6,7 +6,11 @@
         margin: 0 0 19px;
     }
 
-    .brand__img {
+    @include mobile {
+        margin: 0 0 63px;
+    }
+
+    &__img {
         width: 50%;
         height: auto;
 
@@ -14,13 +18,21 @@
             width: 385px;
             height: 370px;
         }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__title {
         @include font(48px, 58px, 900);
 
         @include tablet {
-            @include font(44px, 53px);
+            @include font(44px, 53px, 900);
+        }
+
+        @include mobile {
+            @include font(38px, 46px, 900);
         }
 
         text-transform: uppercase;
@@ -39,9 +51,13 @@
     &__title-wrp {
         padding: 0 0 0 91px;
         flex-grow: 1;
-        background-color: $pink;
+        background-color: $ligt-pink;
         display: flex;
         align-items: center;
+
+        @include mobile {
+            min-height: 363px;
+        }
     }
 
     &__subtitle {
@@ -52,6 +68,10 @@
 
         @include tablet {
             @include font(24px, 29px);
+        }
+
+        @include mobile {
+            @include font(20px, 24px, 700);
         }
     }
 
