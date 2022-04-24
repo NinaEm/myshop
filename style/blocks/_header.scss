@@ -1,5 +1,6 @@
 .header {
     background-color: $black;
+    position: relative;
 
     &__wrp {
         display: flex;
@@ -23,10 +24,18 @@
         }
     }
 
-    &__nav {
-        display: none;
+    .burger {
+        fill: $white;
     }
 
+    .burger:hover,
+    .burger:focus {
+        fill: $dark-grey;
+    }
+
+    .burger:active {
+        fill: $dark-pink;
+    }
 
     &__logo {
         margin: 0 40px 0 0;
@@ -47,7 +56,7 @@
             display: none;
         }
 
-        &__cart::after {
+        &::after {
             content: '';
             position: absolute;
             background-image: url(../images/icons/round.svg);
@@ -59,7 +68,7 @@
             z-index: 0;
         }
 
-        &__cart::before {
+        &::before {
             content: '5';
             position: absolute;
             font-size: 12px;
@@ -79,7 +88,16 @@
         }
     }
 
-    &__nav {
+    &__button:hover+.header__navigation,
+    &__button:focus+.header__navigation {
+        display: block;
+    }
+
+    &__navigation:hover {
+        display: block;
+    }
+
+    &__navigation {
         position: absolute;
         width: 232px;
         height: 764px;
@@ -125,8 +143,4 @@
             margin: 0 0 12px;
         }
     }
-}
-
-.display-block {
-    display: block;
 }

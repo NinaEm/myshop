@@ -9,14 +9,14 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        &__slogan {
+        &-heading {
             font-size: 13px;
             line-height: 16px;
             text-transform: uppercase;
             margin: 25px 194px 13px 18px;
         }
 
-        &__desk {
+        &-text {
             width: 315px;
             margin: 0 28px 18px 17px;
             font-size: 14px;
@@ -25,7 +25,7 @@
             color: $dark-grey;
         }
 
-        &__price {
+        &-price {
             margin: 0 290px 20px 18px;
             color: $dark-pink;
         }
@@ -60,11 +60,12 @@
     .products__item {
         background-color: $light-grey;
         margin: 0 0 30px;
-        width: 360px;
+        width: 32%;
         min-height: 581px;
 
         @include tablet {
             margin: 0 0 16px;
+            width: 49%;
         }
 
         @include mobile {
